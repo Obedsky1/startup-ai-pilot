@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
   return (
@@ -21,19 +22,21 @@ const CallToAction = () => {
               </h2>
               
               <p className="text-foreground/70 mb-8">
-                Sign up now and take the first step toward data-driven startup success. No credit card required.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
               </p>
               
               <ul className="space-y-3 mb-8">
-                <BenefitItem text="Free startup validation report" />
-                <BenefitItem text="Access to basic AI tools" />
-                <BenefitItem text="14-day Pro trial included" />
+                <BenefitItem text="Lorem ipsum dolor sit amet consectetur" />
+                <BenefitItem text="Adipiscing elit ut aliquam purus" />
+                <BenefitItem text="Mauris in aliquam sem fringilla ut" />
               </ul>
               
-              <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white px-6 py-6 rounded-xl gap-2 text-lg">
-                Sign Up Now
-                <ArrowRight size={18} />
-              </Button>
+              <Link to="/signup">
+                <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white px-6 py-6 rounded-xl gap-2 text-lg">
+                  Sign Up Now
+                  <ArrowRight size={18} />
+                </Button>
+              </Link>
             </div>
             
             <div className="relative">

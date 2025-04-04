@@ -1,6 +1,9 @@
+
 import React, { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { PlayCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -50,13 +53,17 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 mt-10 animate-fade-in-up" style={{
         animationDelay: '0.4s'
       }}>
-          <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white font-medium px-8 py-6 rounded-full animate-glow">
-            Get Started for Free
-          </Button>
-          <Button variant="outline" className="gap-2 px-6 py-6 rounded-full">
-            <PlayCircle size={18} />
-            <span>See How It Works</span>
-          </Button>
+          <Link to="/get-started">
+            <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white font-medium px-8 py-6 rounded-full animate-glow">
+              Get Started for Free
+            </Button>
+          </Link>
+          <Link to="/how-it-works">
+            <Button variant="outline" className="gap-2 px-6 py-6 rounded-full">
+              <PlayCircle size={18} />
+              <span>See How It Works</span>
+            </Button>
+          </Link>
         </div>
         
         <div className="mt-16 md:mt-24 relative w-full max-w-5xl mx-auto animate-fade-in-up" style={{
@@ -64,7 +71,7 @@ const Hero = () => {
       }}>
           <div className="glass p-3 rounded-2xl shadow-xl animate-float">
             <div className="bg-[#121212] rounded-xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="AI Dashboard" className="w-full h-auto object-cover" />
+              <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="AI Dashboard" className="w-full h-auto object-cover" />
             </div>
           </div>
           

@@ -7,33 +7,34 @@ import {
   ArrowUpRight
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const steps = [
   {
     id: 1,
     title: "Enter your startup details",
-    description: "Share your business concept, market, and objectives through our intuitive interface.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
     icon: FileInput,
     delay: 0
   },
   {
     id: 2,
     title: "AI analyzes and validates your business",
-    description: "Our advanced algorithms assess market fit, competitive landscape, and growth potential.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
     icon: BarChart3,
     delay: 0.2
   },
   {
     id: 3,
     title: "Receive actionable insights & recommendations",
-    description: "Get detailed reports with clear steps to improve and optimize your startup strategy.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
     icon: Lightbulb,
     delay: 0.4
   },
   {
     id: 4,
     title: "Optimize your strategy and scale with confidence",
-    description: "Implement AI-driven recommendations and track your progress as you grow.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
     icon: ArrowUpRight,
     delay: 0.6
   }
@@ -48,7 +49,7 @@ const HowItWorks = () => {
             How <span className="text-gradient">It Works</span>
           </h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            A simple four-step process to transform your startup idea into a data-backed business.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
         </div>
 
@@ -81,9 +82,11 @@ const HowItWorks = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white px-8 py-6 rounded-full animate-glow">
-            Start Your Analysis Now
-          </Button>
+          <Link to="/analysis">
+            <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white px-8 py-6 rounded-full animate-glow">
+              Start Your Analysis Now
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
