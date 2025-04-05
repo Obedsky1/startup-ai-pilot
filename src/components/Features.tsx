@@ -120,7 +120,7 @@ interface FeatureCardProps {
 const FeatureCard = ({ title, description, icon: Icon, color, delay }: FeatureCardProps) => {
   return (
     <div 
-      className="glass p-6 md:p-8 rounded-xl flex flex-col items-center md:items-start text-center md:text-left opacity-0 animate-fade-in-up"
+      className="glass p-6 md:p-8 rounded-xl flex flex-col items-center md:items-start text-center md:text-left opacity-0 animate-fade-in-up transition-all duration-300 hover:scale-105 hover:shadow-lg"
       style={{ animationDelay: `${delay}s` }}
     >
       <div className={cn(

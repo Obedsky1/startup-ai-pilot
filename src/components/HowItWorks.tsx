@@ -64,7 +64,7 @@ const HowItWorks = () => {
                 className="opacity-0 animate-fade-in-up"
                 style={{ animationDelay: `${step.delay}s` }}
               >
-                <div className="glass p-6 rounded-xl h-full">
+                <div className="glass p-6 rounded-xl h-full transition-transform duration-300 hover:scale-105">
                   <div className="flex flex-col items-center">
                     <div className="w-14 h-14 bg-neon-purple/10 rounded-full flex items-center justify-center mb-5 relative">
                       <step.icon className="text-neon-purple" size={24} />

@@ -8,7 +8,7 @@ interface TeamMemberProps {
 }
 
 const TeamMember = ({ image, name, role }: TeamMemberProps) => (
-  <div className="animate-fade-in-up glass p-4 rounded-xl text-center">
+  <div className="animate-fade-in-up glass p-4 rounded-xl text-center transition-all duration-300 hover:scale-105 hover:shadow-lg">
     <div className="mb-4 overflow-hidden rounded-full w-32 h-32 mx-auto border-2 border-neon-purple/30">
       <img 
         src={image} 
@@ -53,7 +53,7 @@ const TeamSection = () => {
             Our <span className="text-gradient">Team</span>
           </h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Meet the talented individuals behind OBEDAI who are passionate about helping startups succeed with innovative AI solutions.
           </p>
         </div>
 

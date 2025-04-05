@@ -8,7 +8,7 @@ const testimonials = [
     name: "Alexandra Chen",
     role: "Founder & CEO, TechVista",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
-    content: "StartupAI helped us identify critical gaps in our business model that we completely overlooked. The AI recommendations led to a 40% increase in customer acquisition within just 3 months.",
+    content: "OBEDAI helped us identify critical gaps in our business model that we completely overlooked. The AI recommendations led to a 40% increase in customer acquisition within just 3 months.",
     rating: 5,
     delay: 0
   },
@@ -87,7 +87,7 @@ interface TestimonialCardProps {
 const TestimonialCard = ({ name, role, image, content, rating, delay }: TestimonialCardProps) => {
   return (
     <div 
-      className="glass p-6 rounded-xl h-full flex flex-col opacity-0 animate-fade-in-up"
+      className="glass p-6 rounded-xl h-full flex flex-col opacity-0 animate-fade-in-up transition-all duration-300 hover:scale-105 hover:shadow-lg"
       style={{ animationDelay: `${delay}s` }}
     >
       <div className="flex items-center mb-4">

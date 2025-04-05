@@ -34,7 +34,7 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {/* Free Plan */}
-          <div className="glass p-6 rounded-xl flex flex-col h-full opacity-0 animate-fade-in-up">
+          <div className="glass p-6 rounded-xl flex flex-col h-full opacity-0 animate-fade-in-up transition-all duration-300 hover:scale-105 hover:shadow-lg">
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">Free</h3>
               <p className="text-foreground/60">Start your startup journey</p>
@@ -58,7 +58,7 @@ const Pricing = () => {
           </div>
           
           {/* Pro Plan */}
-          <div className="relative glass border-neon-purple p-6 rounded-xl flex flex-col h-full opacity-0 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="relative glass border-neon-purple p-6 rounded-xl flex flex-col h-full opacity-0 animate-fade-in-up transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{ animationDelay: '0.2s' }}>
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-neon-purple text-white text-sm font-medium py-1 px-3 rounded-full">
               Most Popular
             </div>
@@ -88,7 +88,7 @@ const Pricing = () => {
           </div>
           
           {/* Enterprise Plan */}
-          <div className="glass p-6 rounded-xl flex flex-col h-full opacity-0 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+          <div className="glass p-6 rounded-xl flex flex-col h-full opacity-0 animate-fade-in-up transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{ animationDelay: '0.4s' }}>
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">Enterprise</h3>
               <p className="text-foreground/60">For established startups</p>
