@@ -9,8 +9,8 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { ArrowLeft, SendIcon, Sparkles } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ArrowLeft, SendIcon, Sparkles, Brain } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 
 // Form validation schema
 const formSchema = z.object({
@@ -42,6 +42,7 @@ const GetStarted = () => {
   
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [isSubmitted, setIsSubmitted] = React.useState(false);
+  const navigate = useNavigate();
 
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
@@ -259,11 +260,19 @@ const GetStarted = () => {
                 <p className="text-foreground/70 max-w-md mx-auto mb-8">
                   We've received your startup details and will be analyzing them right away. You'll receive an email with your AI-powered insights shortly.
                 </p>
-                <Link to="/">
-                  <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white font-medium px-8 py-4 rounded-full">
-                    Return to Home
-                  </Button>
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link to="/">
+                    <Button className="bg-gray-700 hover:bg-gray-600 text-white font-medium px-8 py-4 rounded-full">
+                      Return to Home
+                    </Button>
+                  </Link>
+                  <Link to="/brainstorm">
+                    <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white font-medium px-8 py-4 rounded-full flex items-center">
+                      <Brain className="mr-2 h-5 w-5" />
+                      Start Brainstorming
+                    </Button>
+                  </Link>
+                </div>
               </div>
             )}
           </div>

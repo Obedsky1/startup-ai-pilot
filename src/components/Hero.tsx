@@ -71,7 +71,7 @@ const Hero = () => {
       }}>
           <div className="glass p-3 rounded-2xl shadow-xl animate-float">
             <div className="bg-[#121212] rounded-xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="AI Dashboard" className="w-full h-auto object-cover" />
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Team collaborating" className="w-full h-auto object-cover" />
             </div>
           </div>
           
