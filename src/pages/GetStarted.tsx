@@ -68,6 +68,15 @@ const GetStarted = () => {
     }
   };
 
+  const handleStartBrainstorming = () => {
+    // Navigate to brainstorm with form data
+    navigate('/brainstorm', { 
+      state: { 
+        formData: form.getValues() 
+      } 
+    });
+  };
+
   // Set darker background
   React.useEffect(() => {
     document.body.classList.add('bg-[#0a0a14]');
@@ -266,12 +275,13 @@ const GetStarted = () => {
                       Return to Home
                     </Button>
                   </Link>
-                  <Link to="/brainstorm">
-                    <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white font-medium px-8 py-4 rounded-full flex items-center">
-                      <Brain className="mr-2 h-5 w-5" />
-                      Start Brainstorming
-                    </Button>
-                  </Link>
+                  <Button 
+                    className="bg-neon-purple hover:bg-neon-purple/90 text-white font-medium px-8 py-4 rounded-full flex items-center"
+                    onClick={handleStartBrainstorming}
+                  >
+                    <Brain className="mr-2 h-5 w-5" />
+                    Start Brainstorming
+                  </Button>
                 </div>
               </div>
             )}

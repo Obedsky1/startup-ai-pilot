@@ -48,7 +48,7 @@ const Hero = () => {
         
         <p className="mt-6 text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-in-up" style={{
         animationDelay: '0.2s'
-      }}>Turn your startup idea into a validated, market-ready business. Get AI/Real-customer driven insights, test your product, brainstorm strategies, and build a scalable foundation—all in one platform.</p>
+      }}>Transform your startup idea into a validated, market-ready business. Get AI-driven insights, test your product-market fit, brainstorm growth strategies, and build a scalable foundation—all in one platform.</p>
         
         <div className="flex flex-col sm:flex-row gap-4 mt-10 animate-fade-in-up" style={{
         animationDelay: '0.4s'
@@ -71,7 +71,7 @@ const Hero = () => {
       }}>
           <div className="glass p-3 rounded-2xl shadow-xl animate-float">
             <div className="bg-[#121212] rounded-xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Team collaborating" className="w-full h-auto object-cover" />
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Team collaborating" className="w-full h-auto object-cover" />
             </div>
           </div>
           

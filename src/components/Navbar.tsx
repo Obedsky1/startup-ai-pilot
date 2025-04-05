@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { AlignJustify, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,33 +28,35 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center">
-          <a href="#" className="text-2xl font-bold text-gradient">
-            StartupAI
-          </a>
+          <Link to="/">
+            <Logo />
+          </Link>
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-sm text-foreground/80 hover:text-foreground transition">
+          <Link to="/features" className="text-sm text-foreground/80 hover:text-foreground transition">
             Features
-          </a>
-          <a href="#how-it-works" className="text-sm text-foreground/80 hover:text-foreground transition">
+          </Link>
+          <Link to="/how-it-works" className="text-sm text-foreground/80 hover:text-foreground transition">
             How It Works
-          </a>
-          <a href="#testimonials" className="text-sm text-foreground/80 hover:text-foreground transition">
+          </Link>
+          <Link to="/testimonials" className="text-sm text-foreground/80 hover:text-foreground transition">
             Testimonials
-          </a>
-          <a href="#pricing" className="text-sm text-foreground/80 hover:text-foreground transition">
+          </Link>
+          <Link to="/pricing" className="text-sm text-foreground/80 hover:text-foreground transition">
             Pricing
-          </a>
+          </Link>
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
           <Button variant="ghost" className="font-medium">
             Log in
           </Button>
-          <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white font-medium">
-            Sign up
-          </Button>
+          <Link to="/get-started">
+            <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white font-medium">
+              Sign up
+            </Button>
+          </Link>
         </div>
 
         <button 
@@ -71,50 +75,52 @@ const Navbar = () => {
         )}
       >
         <div className="flex justify-between items-center p-6">
-          <a href="#" className="text-2xl font-bold text-gradient">
-            StartupAI
-          </a>
+          <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
+            <Logo />
+          </Link>
           <button onClick={() => setIsMobileMenuOpen(false)}>
             <X size={24} />
           </button>
         </div>
 
         <nav className="flex flex-col items-center justify-center flex-1 space-y-8">
-          <a 
-            href="#features" 
+          <Link 
+            to="/features" 
             className="text-lg font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Features
-          </a>
-          <a 
-            href="#how-it-works" 
+          </Link>
+          <Link 
+            to="/how-it-works" 
             className="text-lg font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             How It Works
-          </a>
-          <a 
-            href="#testimonials" 
+          </Link>
+          <Link 
+            to="/testimonials" 
             className="text-lg font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Testimonials
-          </a>
-          <a 
-            href="#pricing" 
+          </Link>
+          <Link 
+            to="/pricing" 
             className="text-lg font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Pricing
-          </a>
+          </Link>
           <div className="flex flex-col space-y-4 pt-8">
             <Button variant="outline" className="w-full font-medium">
               Log in
             </Button>
-            <Button className="w-full bg-neon-purple hover:bg-neon-purple/90 text-white font-medium">
-              Sign up
-            </Button>
+            <Link to="/get-started" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button className="w-full bg-neon-purple hover:bg-neon-purple/90 text-white font-medium">
+                Sign up
+              </Button>
+            </Link>
           </div>
         </nav>
       </div>
