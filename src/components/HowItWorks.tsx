@@ -13,28 +13,28 @@ const steps = [
   {
     id: 1,
     title: "Enter your startup details",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
+    description: "Share your vision, industry, and business model. The more details you provide, the more personalized insights you'll receive.",
     icon: FileInput,
     delay: 0
   },
   {
     id: 2,
     title: "AI analyzes and validates your business",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
+    description: "Our advanced AI examines market trends, competition, and growth potential to provide a comprehensive analysis of your startup's viability.",
     icon: BarChart3,
     delay: 0.2
   },
   {
     id: 3,
     title: "Receive actionable insights & recommendations",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
+    description: "Get detailed feedback on your business model, potential pivots, and optimization strategies tailored specifically to your startup.",
     icon: Lightbulb,
     delay: 0.4
   },
   {
     id: 4,
     title: "Optimize your strategy and scale with confidence",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
+    description: "Implement AI-driven recommendations to refine your approach, attract investors, and accelerate your startup's growth trajectory.",
     icon: ArrowUpRight,
     delay: 0.6
   }
@@ -49,7 +49,7 @@ const HowItWorks = () => {
             How <span className="text-gradient">It Works</span>
           </h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Our streamlined process transforms your startup idea into a validated, market-ready business through AI-powered analysis and strategic recommendations.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Link to="/analysis">
+          <Link to="/get-started">
             <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white px-8 py-6 rounded-full animate-glow">
               Start Your Analysis Now
             </Button>

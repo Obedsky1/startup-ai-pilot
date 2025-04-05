@@ -22,16 +22,16 @@ const CallToAction = () => {
               </h2>
               
               <p className="text-foreground/70 mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                Join thousands of founders who have accelerated their startup journey with our AI-powered analysis and expert recommendations.
               </p>
               
               <ul className="space-y-3 mb-8">
-                <BenefitItem text="Lorem ipsum dolor sit amet consectetur" />
-                <BenefitItem text="Adipiscing elit ut aliquam purus" />
-                <BenefitItem text="Mauris in aliquam sem fringilla ut" />
+                <BenefitItem text="Validate your business model with data-driven insights" />
+                <BenefitItem text="Identify your most promising market opportunities" />
+                <BenefitItem text="Get a personalized growth strategy for your unique startup" />
               </ul>
               
-              <Link to="/signup">
+              <Link to="/get-started">
                 <Button className="bg-neon-purple hover:bg-neon-purple/90 text-white px-6 py-6 rounded-xl gap-2 text-lg">
                   Sign Up Now
                   <ArrowRight size={18} />
